@@ -30,12 +30,70 @@ body {
   background-color: var(--roxo-empresa);
   color: var(--cinza-escuro);
   font-family: var(--fonte-principal);
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
 }
 
-
-form {
+#formlogin {
+    color: var(--texto-branco);
+    background-color: var(--cinza-escuro);
+    
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    
+    
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    border: 1px solid none;
+    border-radius: 20px;
+    box-shadow: 0 0 30px var(--cinza-escuro);
     
+    transition: transform 0.8s ease;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    label {
+        padding-bottom: 3px;
+    }
+
+    input {
+        padding: 3px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    button{
+        padding: 3px;
+        width: 171.6px;
+        border-radius: 8px;
+        border: solid;
+        border-color: var(--roxo-empresa);
+        /* box-shadow: 0 0 30px var(--cinza-escuro); */
+        font-weight: bold;
+        background-color: var(--roxo-empresa);
+        color: var(--texto-branco);
+        transition: transform 0.5s ease;
+
+    }
+
+    button:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }  
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
