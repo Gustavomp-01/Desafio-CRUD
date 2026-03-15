@@ -24,8 +24,48 @@
     text-decoration: none;
 }
 
+nav{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background-color: var(--cinza-escuro);
+    padding: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 
+    .Logo{
+        width: 45px;
+        height: 45px;
+
+        /* Remove espaços extras embaixo da imagem */
+        display: block; 
+    }
+
+    ul{
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+
+        a{
+            color: var(--texto-branco);
+            transition: 0.3s;
+            font-size: 1.2rem;
+            letter-spacing: 0.05rem;
+
+            &:hover{
+                color: var(--roxo-empresa);
+            }
+        }
+    }
+
+
+
+
+}
 body {
   background-color: var(--roxo-empresa);
   color: var(--cinza-escuro);
@@ -68,6 +108,14 @@ body {
         padding-bottom: 3px;
     }
 
+    #user-label{
+        margin-left: -105px;
+    }
+
+    #label-senha{
+        margin-left: -117px;
+    }
+
     input {
         padding: 3px;
         border-radius: 5px;
@@ -96,4 +144,11 @@ body {
     &:hover{
         transform: scale(1.1);
     }
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

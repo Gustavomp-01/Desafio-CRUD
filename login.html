@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buenas Imoveis Admin</title>
     <link rel="stylesheet" href="./CSS/Style_Login.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
 
 </head>
 <body>
+
+    <nav>
+        <!-- Ícone -->
+         <a href="#">
+            <img src="./assets/favicon.svg" alt="Logo" class="Logo">
+         </a>
+
+         <!-- Link para a página principal -->
+          <ul>
+            <li><a href="">Home</a></li>
+          </ul>
+    </nav>
     <form id="formlogin" >
 
     
 
             <h2>Login</h2>
             
-            <label for="user">Usuário</label>
+            <label for="user" id="user-label">Usuário</label>
             <input type="text" id="user" placeholder="Insira o usuário">
             
             <label for="senha" id="label-senha">Senha</label>
@@ -25,5 +38,7 @@
             <button>Login</button>
         
     </form>
+
+    <footer>Buenas Imóveis - 2026 &copy; Nenhum direito reservado</footer>
 </body>
 </html>
