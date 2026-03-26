@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Variáveis */
+:root {
+    /* Paleta de cores  */
+    --roxo-empresa: #6c5fff;
+    --cinza-escuro: #232323;
+    
+
+
+    /* Cores Neutras de Apoio */
+    --fundo-claro: #f8f9fa;
+    --texto-branco: #ffffff;
+
+    /* Fonte */
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--roxo-empresa);
+}
+
+
+nav{
+    position: top;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background-color: var(--cinza-escuro);
+    padding: 8px;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .Logo{
+        width: 45px;
+        height: 45px;
+
+        /* Remove espaços extras embaixo da imagem */
+        display: block; 
+    }
+
+    ul{
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+
+        a{
+            color: var(--texto-branco);
+            transition: 0.3s;
+            font-size: 1.2rem;
+            letter-spacing: 0.05rem;
+            font-family: var(--fonte-principal);
+
+
+            &:hover{
+                color: var(--roxo-empresa);
+            }
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: var(--fonte-principal);
+}
