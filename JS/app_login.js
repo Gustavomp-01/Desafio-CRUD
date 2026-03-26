@@ -19,7 +19,7 @@ function efetuarlogin(){
     const password = formLogin.senha.value;
 
     if(user == usuario_aceito && password == senha_aceita){
-        window.location.replace("Admin.html");
+        window.location.replace("admin.html");
     }else{
         alert("Usuário ou senha incorretos ! Tente novamente.");
     }
